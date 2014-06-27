@@ -4,10 +4,11 @@ KERNEL_REPO?="git://git.rocketboards.org/linux-socfpga.git"
 #KERNEL_BRANCH?="socfpga-${PV}"
 KERNEL_PROT?="http"
 KERNEL_DEFCONFIG?="socfpga_defconfig"
+KERNEL_TAG?="${AUTOREV}"
 
 SRC_URI = "${KERNEL_REPO};protocol=${KERNEL_PROT};branch=${KERNEL_BRANCH}"
 
-SRCREV_pn-${PN} = "${AUTOREV}"
+SRCREV_pn-${PN} = "${KERNEL_TAG}"
 
 inherit kernel
 SECTION = "kernel"
