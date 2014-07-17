@@ -21,8 +21,6 @@ LIC_FILES_CHKSUM = "file://${S}/COPYING;md5=d7810fab7487fb0aad327b76f1be7cd7"
 
 S = "${WORKDIR}/git"
 
-SRCREV_pn-${PN} = "${AUTOREV}"
-
 MACHINE_DEFCONFIG = "${KERNEL_DEFCONFIG}"
 
 do_configure() {
